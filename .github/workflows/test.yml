@@ -5,6 +5,11 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+      - staging
+    paths:
+      - "common/**"
 
 jobs:
   test:
