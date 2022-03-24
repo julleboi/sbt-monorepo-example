@@ -1,3 +1,3 @@
 package common.models
 
-case class Test(message: String, id: Int = 0)
+case class Test(message: Option[String], id: Int = 0)
