@@ -1,4 +1,4 @@
-name := "multi-project-test"
+name := "sbt-monorepo-example"
 organization := "lol"
 scalaVersion := "2.13.8"
 
@@ -34,7 +34,7 @@ lazy val foo = project
 
 lazy val bar = project
   .settings(
-    name := "foo",
+    name := "bar",
     settings,
     assemblySettings,
     libraryDependencies ++= commonDependencies ++ Seq(
